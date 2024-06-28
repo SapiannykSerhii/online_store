@@ -1,38 +1,62 @@
 const initialState = {
   
-  products: {
-    items: [
-  //     {
-  //       id: 1,
-  //       name: 'Hand-painted T-Shirt',
-  //       description: 'A unique hand-painted t-shirt.',
-  //       price: 50,
-  //       image: 'https://artandistore.com/cdn/shop/products/20210726_PT_c_960x.jpg?v=1643096532',
-  //     },
-  //     {
-  //       id: 2,
-  //       name: 'Custom Banner Design',
-  //       description: 'Professional custom banner design.',
-  //       price: 100,
-  //       image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUL29pA-aBWRrp5g_21V4F6JYV_TG4qcfn6Q&s',
-  //     },
-  //     {
-  //       id: 3,
-  //       name: 'Website Development',
-  //       description: 'Full-stack website development services.',
-  //       price: 500,
-  //       image: 'https://5.imimg.com/data5/SELLER/Default/2024/1/378238755/UX/BV/FQ/8239070/full-stack-website-development-services.png',
-  //     }
-    ],
+  products: [
+    {
+      id: 1,
+      name: 'Product 1',
+      description: 'Description of Product 1',
+      price: 100,
+      image: 'https://images.pexels.com/photos/249324/pexels-photo-249324.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      stock: 10,
+    },
+    {
+      id: 2,
+      name: 'Product 2',
+      description: 'Description of Product 1',
+      price: 200,
+      image: 'https://images.pexels.com/photos/249324/pexels-photo-249324.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      stock: 20,
+    },
+    {
+      id: 3,
+      name: 'Product 3',
+      description: 'Description of Product 1',
+      price: 300,
+      image: 'https://images.pexels.com/photos/249324/pexels-photo-249324.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      stock: 30,
+    },
+    {
+      id: 4,
+      name: 'Phone',
+      description: 'Description of Product 1',
+      price: 400,
+      image: 'https://images.pexels.com/photos/249324/pexels-photo-249324.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      stock: 40,
+      
+    },
+    {
+      id: 5,
+      name: 'Product 5',
+      description: 'Description of Product 1',
+      price: 300,
+      image: 'https://images.pexels.com/photos/249324/pexels-photo-249324.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      stock: 50,
+    },
+    {
+      id: 6,
+      name: 'Product 6',
+      description: 'Description of Product 1',
+      price: 600,
+      image: 'https://images.pexels.com/photos/249324/pexels-photo-249324.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      stock: 60,
+    }
+     
+],
+  
 
-    loading: false,
-    error: null,
-
-  },
-
-  cart: {
-    items: [],
-  },
+  // cart: {
+  //   items: [],
+  // },
     
   
   
