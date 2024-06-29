@@ -1,10 +1,12 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import { Box, Typography, Card, CardContent, CardMedia } from '@mui/material';
+import { Box, Typography, Card, CardContent, CardMedia, Button } from '@mui/material';
+import { productSelectors } from "../redux/selectors/productSelectors";
+import { Link } from "react-router-dom";
 
 const ProductList = () => {
 
-  const products = useSelector(state => state.products)
+  const products = useSelector(productSelectors)
   // console.log(products)
 
   return (
@@ -21,12 +23,15 @@ const ProductList = () => {
             <Typography gutterBottom variant="h5" component="div">
               {product.name}
             </Typography>
-            <Typography variant="body2" color="text.secondary">
-              {product.description}
-            </Typography>
-            <Typography variant="body1" color="text.primary">
-              ${product.price}
-            </Typography>
+            <Button
+              component={Link}
+              to={`/product/${product.id}`}
+              variant="contained"
+              color="primary"
+              sx={{ mt : 2}}
+            >
+            View Details
+            </Button>
           </CardContent>
         </Card>
       ))}

@@ -51,15 +51,9 @@ const initialState = {
       stock: 60,
     }
      
-],
-  
-
-  // cart: {
-  //   items: [],
-  // },
-    
-  
-  
+  ],
+  cart: [],
+  saved: [],
 }
 
 export default initialState
