@@ -6,13 +6,14 @@ import Footer from './pages/Footer';
 import HomePage from './pages/HomePage';
 import ProductList from './components/ProductList';
 import SinglePost from './components/SingleProduct';
+import './index.css';
 
 const App = () => {
   return (
     <Router>
-      <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
+      <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', margin: 0, padding: 0 }}>
         <NavBar />
-        <Box sx={{flex: 1}}>
+        <Box sx={{ flex: 1, display: 'flex', flexDirection: 'column', margin: 0, padding: 0 }}>
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/shop" element={<ProductList />} />
